@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy your static files to Nginx's web directory
-COPY . /usr/share/nginx/html
+COPY 2048-master/ /usr/share/nginx/html
 
 # Expose port 80 (default Nginx port)
 EXPOSE 80
