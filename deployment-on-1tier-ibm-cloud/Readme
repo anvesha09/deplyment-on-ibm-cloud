@@ -28,22 +28,21 @@ This project is part of an IBM Cloud internship where the goal is to develop a s
 FROM nginx:alpine
 COPY 2048-master/ /usr/share/nginx/html
 EXPOSE 80
-```
 
 
 ---
 
-## Steps to Deploy
+##  Steps to Deploy
 
-# 1. Build Docker Image
+### 1. Build Docker Image
 ```
 docker build -t us.icr.io/anvesha2048/ibm-2048 .
 
-# 2. Push to IBM Container Registry
+### 2. Push to IBM Container Registry
 ```
 docker push us.icr.io/anvesha2048/ibm-2048
 
-# 3. Deploy via IBM Code Engine
+### 3. Deploy via IBM Code Engine
 
 - Use the pushed image
 
