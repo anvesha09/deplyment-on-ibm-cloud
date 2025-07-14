@@ -28,6 +28,7 @@ This project is part of an IBM Cloud internship where the goal is to develop a s
 FROM nginx:alpine
 COPY 2048-master/ /usr/share/nginx/html
 EXPOSE 80
+```
 
 
 ---
@@ -44,21 +45,21 @@ docker push us.icr.io/anvesha2048/ibm-2048
 
 # 3. Deploy via IBM Code Engine
 
--Use the pushed image
+- Use the pushed image
 
--Configure registry secret
+- Configure registry secret
 
--Set port to 80
+- Set port to 80
 
--Allow public access
+- Allow public access
 
 ---
 
 ##  Output
 
--Application running on IBM Code Engine
+- Application running on IBM Code Engine
 
--Live 2048 Game: [Click to Play](https://ibm-2048.1xt1dairatus.us-south.codeengine.appdomain.cloud/)
+- Live 2048 Game: [Click to Play](https://ibm-2048.1xt1dairatus.us-south.codeengine.appdomain.cloud/)
 
 ---
 
