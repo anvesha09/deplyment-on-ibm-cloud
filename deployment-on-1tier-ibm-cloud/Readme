@@ -1,10 +1,10 @@
-# Deployment of 2048 Game on IBM Cloud using Docker and Code Engine
+#  Deployment of 2048 Game on IBM Cloud using Docker and Code Engine
 
 This project is part of an IBM Cloud internship where the goal is to develop a simple web application, containerize it using Docker, and deploy it on IBM Cloud using Code Engine. I chose the classic **2048 game** and deployed it as a static web app.
 
 ---
 
-## Project Objective
+##  Project Objective
 
 - Learn how to containerize a web application using Docker
 - Deploy the Dockerized app on **IBM Cloud Code Engine**
@@ -12,7 +12,7 @@ This project is part of an IBM Cloud internship where the goal is to develop a s
 
 ---
 
-## Technologies Used
+##  Technologies Used
 
 - Docker  
 - IBM Cloud Code Engine  
@@ -22,12 +22,13 @@ This project is part of an IBM Cloud internship where the goal is to develop a s
 
 ---
 
-## 🐳 Dockerfile
+##  Dockerfile
 
 ```Dockerfile
 FROM nginx:alpine
 COPY 2048-master/ /usr/share/nginx/html
-EXPOSE 80```
+EXPOSE 80
+
 
 ---
 
@@ -35,13 +36,13 @@ EXPOSE 80```
 
 # 1. Build Docker Image
 ```
-docker build -t us.icr.io/anvesha2048/ibm-2048 .```
+docker build -t us.icr.io/anvesha2048/ibm-2048 .
 
-# 2.Push to IBM Container Registry
+# 2. Push to IBM Container Registry
 ```
-docker push us.icr.io/anvesha2048/ibm-2048```
+docker push us.icr.io/anvesha2048/ibm-2048
 
-# 3.Deploy via IBM Code Engine
+# 3. Deploy via IBM Code Engine
 
 -Use the pushed image
 
@@ -53,17 +54,14 @@ docker push us.icr.io/anvesha2048/ibm-2048```
 
 ---
 
-##Output
+##  Output
 
 -Application running on IBM Code Engine
 
--Live 2048 Game: [https://ibm-2048.1xt1dairatus.us-south.codeengine.appdomain.cloud/]
+-Live 2048 Game: [Click to Play](https://ibm-2048.1xt1dairatus.us-south.codeengine.appdomain.cloud/)
 
 ---
 
-## Screenshots
-
-# 1. 1. 2048 Game Live on Browser
 
 
 
