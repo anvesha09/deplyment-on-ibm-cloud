@@ -36,12 +36,14 @@ EXPOSE 80
 ##  Steps to Deploy
 
 ### 1. Build Docker Image
-```
+
+```bash
 docker build -t us.icr.io/anvesha2048/ibm-2048 .
 ```
 
 ### 2. Push to IBM Container Registry
-```
+
+```bash
 docker push us.icr.io/anvesha2048/ibm-2048
 ```
 
